@@ -1,0 +1,9 @@
+CLASS zbp_cds_bank_data1 DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zcds_bank_data1.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_CDS_BANK_DATA1 IMPLEMENTATION.
+ENDCLASS.

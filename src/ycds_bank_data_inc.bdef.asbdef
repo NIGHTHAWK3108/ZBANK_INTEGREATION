@@ -1,0 +1,35 @@
+managed implementation in class zbp_cds_bank_data_inc unique;
+strict ( 2 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+define behavior for YCDS_BANK_DATA_INC //alias <alias_name>
+persistent table zbank_data1
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+//  field ( readonly ) Transactionid;
+
+mapping for zbank_data1
+{
+    transactionid    =     transactionid ;
+    creditdatetime   =     creditdatetime    ;
+    fromaccountnumber=     fromaccountnumber ;
+    frombankname     =     frombankname      ;
+    remittername     =     remittername      ;
+    utr              =     utr               ;
+    chequeno         =     chequeno          ;
+    narration        =     narration         ;
+    virtualaccount   =     virtualaccount    ;
+    amount           =     amount            ;
+    mmid             =     mmid              ;
+    profit_cent      =     profit_cent       ;
+    cust_no          =     cust_no           ;
+    transfermode     =     transfermode      ;
+    journalentryno   =     journalentryno    ;
+    error            =     error             ;
+    businessplace    =     businessplace     ;
+
+}
+}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'SERVICE DEFINITION FOR ZCDS_BANK_DATA1'
+define service ZSER_DEF_ZCDS_BANK_DATA1 {
+  expose ZCDS_BANK_DATA1;
+  expose ZCDS_BUS_PLC;
+}

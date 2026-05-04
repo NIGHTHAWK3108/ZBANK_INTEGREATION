@@ -1,0 +1,14 @@
+unmanaged implementation in class zbp_cds_bank_data1 unique;
+strict ( 1 );
+
+define behavior for ZCDS_BANK_DATA1 //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  action Bank_data;
+  action Profit_Center;
+  action Business_Place;
+  action reject;
+}
